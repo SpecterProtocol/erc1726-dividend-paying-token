@@ -8,7 +8,7 @@ import "./SafeMathUint.sol";
 import "./SafeMathInt.sol";
 import "./DividendPayingTokenInterface.sol";
 import "./DividendPayingTokenOptionalInterface.sol";
-import "./Ownable.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 
 /// @title Dividend-Paying Token
