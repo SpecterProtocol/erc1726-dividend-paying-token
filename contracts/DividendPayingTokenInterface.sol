@@ -1,4 +1,6 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.0;
 
 
 /// @title Dividend-Paying Token Interface
@@ -10,11 +12,6 @@ interface DividendPayingTokenInterface {
   /// @return The amount of dividend in wei that `_owner` can withdraw.
   function dividendOf(address _owner) external view returns(uint256);
 
-  /// @notice Distributes ether to token holders as dividends.
-  /// @dev SHOULD distribute the paid ether to token holders as dividends.
-  ///  SHOULD NOT directly transfer ether to token holders in this function.
-  ///  MUST emit a `DividendsDistributed` event when the amount of distributed ether is greater than 0.
-  function distributeDividends() external payable;
 
   /// @notice Withdraws the ether distributed to the sender.
   /// @dev SHOULD transfer `dividendOf(msg.sender)` wei to `msg.sender`, and `dividendOf(msg.sender)` SHOULD be 0 after the transfer.
