@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "./ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "https://github.com/SpecterProtocol/erc1726-dividend-paying-token/blob/786a5edc30b08277534b65d19cc2e858be4d570d/contracts/math/SafeMathUint.sol";
 import "https://github.com/SpecterProtocol/erc1726-dividend-paying-token/blob/786a5edc30b08277534b65d19cc2e858be4d570d/contracts/math/SafeMathInt.sol";
